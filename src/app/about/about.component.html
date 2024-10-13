@@ -1,0 +1,41 @@
+<section id="about" class="about section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+        <div class="col-md-6">
+
+          <div class="row justify-content-between gy-4">
+            <div class="col-lg-5">
+              <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-7 about-info">
+              <p><strong>Name: </strong> <span>{{ basicInfo.name }}</span></p>
+              <p><strong>Profile: </strong> <span>{{ basicInfo.profile }}</span></p>
+              <p><strong>Email: </strong> <span>{{ basicInfo.email }}</span></p>
+              <p><strong>Phone: </strong> <span>{{ basicInfo.phone }}</span></p>
+            </div>
+          </div>
+
+          <div class="skills-content skills-animation">
+
+            <h5>Skills</h5>
+            <div *ngFor="let skill of skills">
+                <app-skill [skillName]="skill.name" [skillLevel]="skill.level"></app-skill>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="about-me">
+            <h4>About me</h4>
+            <p>
+                {{ aboutMe }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>

@@ -1,0 +1,30 @@
+<nav id="navmenu" class="navmenu">
+    <ul>
+      <li>
+        <a href="#hero" 
+           [ngClass]="{'active': activeMenuItem === 'home'}" 
+           (click)="setActive('home')">Home</a>
+      </li>
+      <li>
+        <a href="#about" 
+           [ngClass]="{'active': activeMenuItem === 'about'}" 
+           (click)="setActive('about')">About</a>
+      </li>
+      <li>
+        <a href="#services" 
+           [ngClass]="{'active': activeMenuItem === 'services'}" 
+           (click)="setActive('services')">Services</a>
+      </li>
+      <li>
+        <a href="#portfolio" 
+           [ngClass]="{'active': activeMenuItem === 'portfolio'}" 
+           (click)="setActive('portfolio')">Portfolio</a>
+      </li>
+      <li>
+        <a href="#contact" 
+           [ngClass]="{'active': activeMenuItem === 'contact'}" 
+           (click)="setActive('contact')">Contact</a>
+      </li>
+    </ul>
+    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  </nav>

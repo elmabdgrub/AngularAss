@@ -1,0 +1,8 @@
+<div class="resume-item">
+    <h4>{{ jobTitle }}</h4>
+    <h5>{{ jobDates }}</h5>
+    <p><em>{{ jobCompany }}</em></p>
+    <ul>
+      <li *ngFor="let responsibility of jobResponsibilities">{{ responsibility }}</li>
+    </ul>
+</div>

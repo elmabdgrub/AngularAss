@@ -1,0 +1,30 @@
+<!-- <section class="container my-5">
+    <h2 class="text-center mb-4">Professional Skills</h2>
+    <div *ngFor="let skill of skills" class="mb-3">
+        <label>{{ skill.name }}</label>
+        <div class="progress">
+            <div class="progress-bar bg-success" [style.width]="skill.level + '%'">{{ skill.level }}%</div>
+        </div>
+    </div>
+</section> -->
+<section id="services" class="services section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Services</h2>
+      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6" *ngFor="let service of services">
+              <app-service 
+                [serviceIcon]="service.icon" 
+                [serviceTitle]="service.title" 
+                [serviceDescription]="service.description">
+              </app-service>
+            </div>
+          </div>
+    </div>
+
+  </section>
